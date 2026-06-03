@@ -1,0 +1,14 @@
+{
+  "name": "@fitness-router/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "UV_CACHE_DIR=.uv-cache uv run --project . uvicorn fitness_router.api:app --reload --host 0.0.0.0 --port 8000",
+    "build": "UV_CACHE_DIR=.uv-cache uv build",
+    "lint": "UV_CACHE_DIR=.uv-cache uv run --project . --extra dev ruff check src tests",
+    "test": "UV_CACHE_DIR=.uv-cache uv run --project . --extra dev pytest --cov=fitness_router --cov-report=term-missing",
+    "eval": "UV_CACHE_DIR=.uv-cache uv run --project . python -m fitness_router.evals.evaluate_router",
+    "eval:generator": "UV_CACHE_DIR=.uv-cache uv run --project . python -m fitness_router.evals.evaluate_workout_generator",
+    "optimize": "UV_CACHE_DIR=.uv-cache uv run --project . python -m fitness_router.evals.optimize_router"
+  }
+}

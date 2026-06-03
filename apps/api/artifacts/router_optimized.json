@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "langchain_structured_router_prompt",
+  "optimizer": "dspy.MIPROv2",
+  "instruction": "Classify a fitness request into exactly one route.",
+  "routing_policy": "Use these routing rules:\n- COACH: fitness, exercise, muscle, equipment, programming, or how-to questions.\n- WORKOUT_GENERATE: requests to create, build, design, generate, or plan a workout.\n- WORKOUT_LOG: reports or commands to record completed exercise activity.\n- FALLBACK: ambiguous fragments, missing prior context, or multi-intent requests.\n- A how-to question about recording or logging remains COACH unless the user directly commands you to save/log/record completed work.\n- Ambiguous fragments like 'Bench press' should be FALLBACK, not a guessed route.\n\nReturn only a JSON object matching the RouteDecision schema. candidate_routes must be a list of objects with route and score fields.",
+  "few_shots": [],
+  "dspy_state": {
+    "predict.predict": {
+      "traces": [],
+      "train": [],
+      "demos": [],
+      "signature": {
+        "instructions": "Classify a fitness request into exactly one route.",
+        "fields": [
+          {
+            "prefix": "Route Catalog:",
+            "description": "Route descriptions and examples."
+          },
+          {
+            "prefix": "User Input:",
+            "description": "The user's raw natural-language request."
+          },
+          {
+            "prefix": "Reasoning:",
+            "description": "${reasoning}"
+          },
+          {
+            "prefix": "Route:",
+            "description": "One of COACH, WORKOUT_GENERATE, WORKOUT_LOG, FALLBACK."
+          },
+          {
+            "prefix": "Confidence:",
+            "description": "A number from 0.0 to 1.0."
+          },
+          {
+            "prefix": "Reason:",
+            "description": "Short explanation for the selected route."
+          },
+          {
+            "prefix": "Candidate Routes:",
+            "description": "Ranked plausible route names, most likely first."
+          },
+          {
+            "prefix": "Clarification Question:",
+            "description": "Question to ask if ambiguous; empty string otherwise."
+          }
+        ]
+      },
+      "lm": null
+    },
+    "metadata": {
+      "dependency_versions": {
+        "python": "3.12",
+        "dspy": "3.2.1",
+        "cloudpickle": "3.1"
+      }
+    }
+  },
+  "metrics": {
+    "example_count": 48,
+    "train_count": 36,
+    "validation_count": 12
+  }
+}

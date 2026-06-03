@@ -1,0 +1,48 @@
+{"user_input":"What muscles does a deadlift work?","expected_route":"COACH","should_fallback":false,"reason_category":"exercise_education"}
+{"user_input":"Which joints are loaded during a push up?","expected_route":"COACH","should_fallback":false,"reason_category":"exercise_education"}
+{"user_input":"Explain horizontal push versus vertical push","expected_route":"COACH","should_fallback":false,"reason_category":"training_concept"}
+{"user_input":"How much rest should I take between heavy bench sets?","expected_route":"COACH","should_fallback":false,"reason_category":"programming_question"}
+{"user_input":"What equipment do I need for dumbbell presses?","expected_route":"COACH","should_fallback":false,"reason_category":"equipment_question"}
+{"user_input":"Why do my shoulders work during overhead press?","expected_route":"COACH","should_fallback":false,"reason_category":"exercise_education"}
+{"user_input":"How do I progress a beginner lower body routine?","expected_route":"COACH","should_fallback":false,"reason_category":"programming_question"}
+{"user_input":"What movement pattern is a squat?","expected_route":"COACH","should_fallback":false,"reason_category":"training_concept"}
+{"user_input":"Is a pull up more back or arms?","expected_route":"COACH","should_fallback":false,"reason_category":"exercise_education"}
+{"user_input":"What does priority tier mean in the exercise dataset?","expected_route":"COACH","should_fallback":false,"reason_category":"dataset_question"}
+{"user_input":"Build me a 30 min upper body session with dumbbells","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Create a lower body workout with a barbell","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Make me a 20 minute core finisher","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Give me a quick push workout using a bench","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Plan a 45 min pull session for the gym","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"I want a workout for chest and triceps","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Can you create a dumbbell only session?","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Build a workout around squats and lunges","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Design a 10 minute warmup for upper body","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Generate a bodyweight workout I can do at home","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"I just did 3x10 bench press at 185 lbs","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Logged 4 sets of 12 goblet squats with 45 lb","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Finished 5x5 pull ups","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"I completed 3x8 overhead press at 95 pounds","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Add 2x20 push ups to my log","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Yesterday I did 4x10 split squats","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Record 3 sets of 15 curls","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"I hit 3x12 tricep extensions with 30 lb","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Save my 30 minute run","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Mark 4x8 lat pulldowns at 120 lbs as done","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"Bench press","expected_route":"FALLBACK","should_fallback":true,"reason_category":"ambiguous_fragment"}
+{"user_input":"Workout yesterday","expected_route":"FALLBACK","should_fallback":true,"reason_category":"ambiguous_fragment"}
+{"user_input":"Can you adjust it?","expected_route":"FALLBACK","should_fallback":true,"reason_category":"missing_context"}
+{"user_input":"That was too hard","expected_route":"FALLBACK","should_fallback":true,"reason_category":"missing_context"}
+{"user_input":"Upper body","expected_route":"FALLBACK","should_fallback":true,"reason_category":"ambiguous_fragment"}
+{"user_input":"Make it better","expected_route":"FALLBACK","should_fallback":true,"reason_category":"missing_context"}
+{"user_input":"I did a workout yesterday, can you adjust it?","expected_route":"FALLBACK","should_fallback":true,"reason_category":"multi_intent"}
+{"user_input":"Press","expected_route":"FALLBACK","should_fallback":true,"reason_category":"ambiguous_fragment"}
+{"user_input":"What about dumbbells?","expected_route":"FALLBACK","should_fallback":true,"reason_category":"missing_context"}
+{"user_input":"Can you help with this plan?","expected_route":"FALLBACK","should_fallback":true,"reason_category":"missing_context"}
+{"user_input":"Build me a workout with a cable machine and sled","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_unsupported_tools"}
+{"user_input":"I just did bench","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"log_completed_work"}
+{"user_input":"What is better, logging this set or changing my plan?","expected_route":"FALLBACK","should_fallback":true,"reason_category":"multi_intent"}
+{"user_input":"Create a 30 minute workout and log my bench set","expected_route":"FALLBACK","should_fallback":true,"reason_category":"multi_intent"}
+{"user_input":"How should I record 3x10 bench press at 185?","expected_route":"COACH","should_fallback":false,"reason_category":"how_to_question"}
+{"user_input":"Log 3x10 bench press at 185","expected_route":"WORKOUT_LOG","should_fallback":false,"reason_category":"imperative_log"}
+{"user_input":"Plan tomorrow's dumbbell workout","expected_route":"WORKOUT_GENERATE","should_fallback":false,"reason_category":"generate_constraints"}
+{"user_input":"Should my next session include more pulling?","expected_route":"COACH","should_fallback":false,"reason_category":"programming_question"}

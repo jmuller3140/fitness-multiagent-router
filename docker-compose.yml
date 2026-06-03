@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: fitness_router
+      POSTGRES_USER: fitness_router
+      POSTGRES_PASSWORD: fitness_router
+    ports:
+      - "65432:5432"
+    volumes:
+      - fitness_router_pg:/var/lib/postgresql/data
+      - ./infra/postgres:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fitness_router -d fitness_router"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  fitness_router_pg:

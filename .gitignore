@@ -1,10 +1,17 @@
 .venv/
+.uv-cache/
 __pycache__/
 .pytest_cache/
 .ruff_cache/
+.coverage
 .env
 .env.*
 !.env.example
+node_modules/
+.turbo/
+*.tsbuildinfo
 dist/
 build/
 *.egg-info/
+apps/api/artifacts/*
+!apps/api/artifacts/router_optimized.json

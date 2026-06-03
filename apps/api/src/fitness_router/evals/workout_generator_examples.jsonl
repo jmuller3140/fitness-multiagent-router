@@ -1,0 +1,5 @@
+{"user_input":"Build me a 30 min upper body session with dumbbells","expected_outcome":"WORKOUT_BUILT","required_tool_names":["search_exercises","build_workout"],"reason_category":"upper_body_dumbbell"}
+{"user_input":"Create a lower body workout with a barbell","expected_outcome":"WORKOUT_BUILT","required_tool_names":["search_exercises","build_workout"],"reason_category":"lower_body_barbell"}
+{"user_input":"Make me a 20 minute core finisher","expected_outcome":"WORKOUT_BUILT","required_tool_names":["search_exercises","build_workout"],"reason_category":"core_bodyweight"}
+{"user_input":"Give me a quick push workout using a bench","expected_outcome":"WORKOUT_BUILT","required_tool_names":["search_exercises","build_workout"],"reason_category":"push_bench"}
+{"user_input":"Build me a workout with a cable machine and sled","expected_outcome":"NO_RESULTS","required_tool_names":["search_exercises"],"reason_category":"unsupported_equipment"}

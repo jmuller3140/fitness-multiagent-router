@@ -1,0 +1,20 @@
+{
+  "name": "fitness-multiagent-router",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "api:dev": "pnpm --filter @fitness-router/api dev",
+    "api:test": "pnpm --filter @fitness-router/api test",
+    "api:eval": "pnpm --filter @fitness-router/api eval",
+    "api:eval:generator": "pnpm --filter @fitness-router/api eval:generator",
+    "api:optimize": "pnpm --filter @fitness-router/api optimize",
+    "web:dev": "pnpm --filter @fitness-router/web dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  }
+}
